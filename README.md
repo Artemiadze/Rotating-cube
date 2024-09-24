@@ -6,32 +6,48 @@ This program uses rotation matrices in three-dimensional space. In linear algebr
 
 ```math
     R = 
-    \begin{pmatrix}
+    \begin{bsmallmatrix}
     cos(𝜃) & -sin(𝜃)\\
     sin(𝜃) & cos(𝜃)
-    \end{pmatrix} 
+    \end{bsmallmatrix} 
 ```
 
-rotates points in the xy plane counterclockwise through an angle θ about the origin of a two-dimensional Cartesian coordinate system.
+rotates points in the xy plane counterclockwise through an angle θ about the origin of a two-dimensional Cartesian coordinate system. To perform the rotation on a plane point with standard coordinates v = (x, y), it should be written as a column vector, and multiplied by the matrix R:
+```math
+R\times {\color{black}V} = 
+    \begin{bsmallmatrix}
+    cos(𝜃) & -sin(𝜃)\\
+    sin(𝜃) & cos(𝜃)
+    \end{bsmallmatrix}\times
+    \begin{bsmallmatrix}
+    x\\
+    y
+    \end{bsmallmatrix} = 
+    \begin{bsmallmatrix}
+    x\times cos(𝜃) - y\times sin(𝜃)\\
+    x\times sin(𝜃) + y\times cos(𝜃)
+    \end{bsmallmatrix}
+```
 If you are interested in a detailed description of the rotation algorithm, then you can read the article on [Wikipedia](https://en.wikipedia.org/wiki/Rotation_matrix).
 
 ## Visualization
 
 ![GIF](IMG_9598.gif)
+
 ## Installation (Linux)
 1. Installing the GCC compiler (if you don't have one)
 
-Чтобы обновить список пакетов, используйте следующую команду:
+    To update the package list, use the following command:
 
-```sudo apt update```
+    ```sudo apt update```
 
-Теперь мы устанавливаем GCC с помощью следующей команды:
+    Now we install GCC using the following command:
 
-```sudo apt install gcc```
+    ```sudo apt install gcc```
 
-Чтобы установить build-essentials, используйте следующую команду:
+    To install build-essentials, use the following command:
 
-```sudo apt install build-essential```
+    ```sudo apt install build-essential```
 
 2. Cloning a repository
 
@@ -49,13 +65,13 @@ If you are interested in a detailed description of the rotation algorithm, then 
 
  5. Stopping the program and clearing the console
 
- You have to click:
+    You have to click:
 
- ```CTRL+C```
+     ```CTRL+C```
 
- After  enter into the console:
+    After  enter into the console:
 
- ```clear```
+    ```clear```
 
  ## Resources
 
