@@ -1,7 +1,7 @@
 # Rotating cube
 
 ## The mathematical algorithm of the program
-\documentclass{article}
+$\documentclass{article}
 \usepackage{amsmath}
 \begin{document}
 \noindent This program uses rotation matrices in three-dimensional space. In linear algebra rotation matrix is a transformation matrix that is used to perform a rotation in Euclidean space. For example, using the convention below, the matrix
@@ -11,19 +11,22 @@ sin(𝜃) & cos(𝜃)
 \end{pmatrix}$
 rotates points in the xy plane counterclockwise through an angle θ about the origin of a two-dimensional Cartesian coordinate system.
 If you are interested in a detailed description of the rotation algorithm, then you can read the article on [Wikipedia](https://en.wikipedia.org/wiki/Rotation_matrix).
-\end{document}
+\end{document}$
 
 ## Visualization
 
-![GIF](Movie.MOV)
+![GIF](Movie.gif)
 ## Installation (Linux)
 1. Installing the GCC compiler (if you don't have one)
 
 Чтобы обновить список пакетов, используйте следующую команду:
+
 ```sudo apt update```
-Теперь мы устанавливаем GCC с помощью следующей команды.
+Теперь мы устанавливаем GCC с помощью следующей команды:
+
 ```sudo apt install gcc```
 Чтобы установить build-essentials, используйте следующую команду:
+
 ```sudo apt install build-essential```
 
 2. Cloning a repository
