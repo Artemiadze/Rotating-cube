@@ -4,13 +4,13 @@
 
 This program uses rotation matrices in three-dimensional space. In linear algebra rotation matrix is a transformation matrix that is used to perform a rotation in Euclidean space. For example, using the convention below, the matrix
 
-$\[
+```math
     R = 
     \begin{pmatrix}
     cos(𝜃) & -sin(𝜃)\\
     sin(𝜃) & cos(𝜃)
     \end{pmatrix} 
-\]$
+```
 
 rotates points in the xy plane counterclockwise through an angle θ about the origin of a two-dimensional Cartesian coordinate system.
 If you are interested in a detailed description of the rotation algorithm, then you can read the article on [Wikipedia](https://en.wikipedia.org/wiki/Rotation_matrix).
